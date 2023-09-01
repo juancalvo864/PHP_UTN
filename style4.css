@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+nav{
+    padding: 1rem;
+}
+.boton{
+    color: black;
+    border: 2px solid blue;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 4px;
+}
+.boton:hover{
+    background-color: blue;
+    color: white;
+}
