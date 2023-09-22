@@ -13,9 +13,9 @@
         </div>
         <nav class="navbar">
             <div class="buttons">
-                <a class="button" href="./index.php">Home</a>
-                <a class="button" href="#">Tienda</a>
-                <a class="button" href="./actividad4.php">Actividad4</a>
+                <a class="buttonNav" href="./index.php">Home</a>
+                <a class="buttonNav" href="#">Tienda</a>
+                <a class="buttonNav" href="./actividad4.php">Actividad4</a>
             </div>
         </nav>
     </header>
@@ -67,10 +67,32 @@
                 </div>
                 <p>Especificaciones: <?php echo $specifications; ?> </p>
                 <p class="price">Precio: u$S <?php echo $price ?> </p>    
-                <button>Comprar</button>          
+                <button class="comprar">Comprar</button>          
             </div>
         </section>
        
     </main>
+    <footer>
+        <h3>Dejenos sus datos y nos contactaremos a la brevedad.</h2>
+        <form action="formConsulta.php" method="post">
+            <label>
+                Nombre:
+                <input type="text" name="nombre">
+            </label>
+            <label>
+                Apellido:
+                <input type="text" name="apellido">
+            </label>
+            <label>
+                Email:
+                <input type="email" name="email" id="">
+            </label>
+            <label>
+                Recibir novedades:
+                <input type="checkbox" name="novedades" id="" value="1">
+            </label>
+            <input type="submit" class="submit" value="Enviar">
+        </form>
+    </footer>
 </body>
 </html>

@@ -26,14 +26,14 @@
     gap: 4rem;
 }
 
-.button{
+.buttonNav{
     text-decoration: none;
     color: white;
     font-weight:500;
     font-size: 20px;
 }
 
-.button:hover{
+.buttonNav:hover{
     cursor: pointer;
     transform: scale(1.2);
 }
@@ -112,14 +112,40 @@ main{
     text-decoration: underline;
 }
 
-button{
+.comprar{
     padding: 0.5rem;
     border-radius: 15rem;
     background-color: red;
     color: white;
 }
 
-button:hover{
+.comprar:hover{
     transform: scale(1.3);
     cursor: pointer;
+}
+
+footer{
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem 0rem 1.5rem 0rem;
+    gap: .5rem;
+}
+
+footer form label{
+    font-size: 1.2rem;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+footer form{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.submit{
+    padding: .5rem;
 }
