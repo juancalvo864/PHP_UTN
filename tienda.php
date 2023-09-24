@@ -30,10 +30,10 @@
             </ul>
         </nav>
         <?php 
-            $name = "";
+            $name = "Productos";
             $specifications = "";
             $price = null;
-            $img = "";
+            $img = "https://www.pcboxescomputacion.com.ar/img/brands.png";
 
             if (isset($_GET['product'])){
                 switch ($_GET['product']){

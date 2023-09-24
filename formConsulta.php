@@ -10,4 +10,8 @@
 
     mysqli_close($conexion);
 
+    header("Location: tienda.php");
+    
+    exit;
+
 ?>
