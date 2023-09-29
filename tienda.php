@@ -1,34 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda</title> 
-    <link rel="stylesheet" href="./Assets/style_tienda.css">
-    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/6/67/UTN_logo.jpg" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <div class="box_img_nav">
-        </div>
-        <nav class="navbar">
-            <div class="buttons">
-                <a class="buttonNav" href="./index.php">Home</a>
-                <a class="buttonNav" href="#">Tienda</a>
-                <a class="buttonNav" href="./actividad4.php">Actividad4</a>
-            </div>
-        </nav>
-    </header>
+    <?php include("header.php")?>
     <main>
        
-        <nav class="nav_sidebar">
+        <aside class="nav_sidebar">
             <h2>Productos</h2>
             <div class="botones_sidebar">
                 <a href="tienda.php?product=pcDesktop">Computadora de escritorio</a>
                 <a href="tienda.php?product=pcLaptop">Computadora portatil</a>
                 <a href="tienda.php?product=tablet">Tablet</a>
             </ul>
-        </nav>
+        </aside>
         <?php 
             $name = "Productos";
             $specifications = "";
@@ -65,15 +45,20 @@
                 <div class="img_container">
                     <img class="product_img" src="<?php echo $img; ?>" alt="">
                 </div>
-                <p>Especificaciones: <?php echo $specifications; ?> </p>
-                <p class="price">Precio: u$S <?php echo $price ?> </p>    
-                <button class="comprar">Comprar</button>          
+                
+                <?php 
+                    if($price) {   
+                     echo '<p>Especificaciones:' . $specifications .'</p>';
+                     echo '<p class="price">Precio: u$S' . $price  .'</p>';
+                     echo '<button class="comprar">Comprar</button>';
+                    }      
+                ?>
             </div>
         </section>
        
     </main>
     <footer>
-        <h3>Dejenos sus datos y nos contactaremos a la brevedad.</h2>
+        <h3>Dejanos tus datos y nos contactaremos a la brevedad.</h2>
         <form action="formConsulta.php" method="post">
             <label>
                 Nombre:
@@ -93,6 +78,14 @@
             </label>
             <input type="submit" class="submit" value="Enviar">
         </form>
+        <?php 
+            if (isset($_GET['ok'])){
+                echo "<h3>Su mensaje ha sido enviado con exito</h3>";
+            }
+        ?>
+        <p>
+            &copy;Derechos reservados - primer sitio php - Calvo juan
+        </p>
     </footer>
 </body>
 </html>
