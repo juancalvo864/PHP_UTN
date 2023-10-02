@@ -152,7 +152,7 @@
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
-.card img{
+.img_card{
     width: 10rem;
 }
 
@@ -192,4 +192,15 @@ footer form{
 
 .submit{
     padding: .5rem;
+}
+
+
+/*---------css actividad 4-------*/
+
+.body_activity4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 3rem;
 }

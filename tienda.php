@@ -104,7 +104,7 @@
                 <?php 
                 foreach ($productos as $producto) {
                     echo '<div class="card">';
-                    echo '<img src="' . $producto['img'] . '" alt="' . $producto['name'] . '">';
+                    echo '<img class="img_card" src="' . $producto['img'] . '" alt="' . $producto['name'] . '">';
                     echo '<div class="card-info">';
                     echo '<h2>' . $producto['name'] . '</h2>';
                     echo '<p>Precio: u$s' . $producto['price'] . '</p>';

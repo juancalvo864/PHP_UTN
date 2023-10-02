@@ -14,7 +14,7 @@
         <nav class="navbar">
             <div class="buttons">
                 <a class="buttonNav" href="./index.php">Home</a>
-                <a class="buttonNav" href="#">Tienda</a>
+                <a class="buttonNav" href="./tienda.php">Tienda</a>
                 <a class="buttonNav" href="./actividad4.php">Actividad4</a>
             </div>
         </nav>
