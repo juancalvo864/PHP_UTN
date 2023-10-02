@@ -38,7 +38,7 @@
     transform: scale(1.2);
 }
 
-main{
+.side_and_product{
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -109,19 +109,63 @@ main{
 
 .price{
     font-size: 1.5rem;
-    text-decoration: underline;
+}
+
+.final_price{
+    font-size: 1.8rem;
+    color: red;
 }
 
 .comprar{
     padding: 0.5rem;
     border-radius: 15rem;
-    background-color: red;
+    background-color: rgb(246, 110, 13);
     color: white;
 }
 
 .comprar:hover{
     transform: scale(1.3);
     cursor: pointer;
+}
+
+.other_products{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.container_cards_other_products{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: solid 1px #000;
+    border-radius:5px ;
+    gap: 0.5rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.card img{
+    width: 10rem;
+}
+
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:.5rem
+}
+
+.final_price_card{
+    font-size: 1.3rem;
+    color: red;
 }
 
 footer{
